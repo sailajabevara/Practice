@@ -1,0 +1,8 @@
+class Solution:
+    def firstRep(self, s):
+        for i in s:
+            if(s.count(i) > 1):
+                return i
+                break
+        else:
+            return "#"
