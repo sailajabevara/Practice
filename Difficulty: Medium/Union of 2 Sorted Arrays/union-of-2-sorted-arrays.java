@@ -1,0 +1,21 @@
+class Solution {
+    public static ArrayList<Integer> findUnion(int a[], int b[]) {
+        // code here
+       ArrayList<Integer> list=new ArrayList<>();
+       HashSet<Integer> set=new HashSet<>();
+       
+       for(int i=0;i<a.length;i++){
+           set.add(a[i]);
+       }
+       for(int i=0;i<b.length;i++){
+           set.add(b[i]);
+       }
+       
+       for(int num:set){
+           list.add(num);
+       }
+       Collections.sort(list);
+       return list;
+    }
+}
+
