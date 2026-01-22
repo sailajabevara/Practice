@@ -1,0 +1,19 @@
+public class Solution {
+    public String solve(String A) {
+        // Trim extra spaces
+        A = A.trim();
+        
+        // Split words
+        String[] words = A.split("\\s+");
+        
+        // Reverse word order
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = words.length - 1; i >= 0; i--) {
+            result.append(words[i]);
+            if (i != 0) result.append(" ");
+        }
+        
+        return result.toString();
+    }
+}
