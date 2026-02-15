@@ -1,9 +1,8 @@
 class Solution {
-    public static String reverseString(String s) {
+    static String revStr(String s) {
         // code here
-        
-        String reversed = new StringBuilder(s).reverse().toString();
-        
-        return reversed;
+     StringBuilder sb = new StringBuilder(s);
+     sb.reverse();
+     return sb.toString();
     }
 }
